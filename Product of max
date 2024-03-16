@@ -1,0 +1,17 @@
+l=list(map(int,input().split()))
+maxy=0
+a=0
+b=0
+for i in l:
+    if i>maxy:
+        maxy=i
+print(maxy)
+l.remove(maxy)
+b=0
+for j in l:
+    if j>b:
+        b=j
+print(b)
+print(maxy*b)
+            
+            
