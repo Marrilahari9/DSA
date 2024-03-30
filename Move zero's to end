@@ -1,0 +1,13 @@
+def fun(arr):
+    temp=[]
+    for i in range(len(arr)):
+        if arr[i]!=0:
+            temp.append(arr[i])
+    n=len(temp)
+    for k in range(n):
+        arr[k]=temp[k]
+    for j in range(n,len(arr)):
+        arr[j]=0
+    return arr 
+arr=[1 ,0 ,2 ,3 ,0 ,4 ,0 ,1]
+print(fun(arr))
