@@ -1,0 +1,19 @@
+arr=[]
+L=int(input())
+for l in range(L):
+    y=int(input())
+    arr.append(y)
+print(arr)
+k=int(input())
+list=[]
+if k<L:
+    for j in range(k):
+        list.append(arr[j])
+    print(list)
+
+    n=len(arr)
+    for i in range(k,n):
+        arr[i-k]=arr[i]
+    for i in range(n-k,n):
+        arr[i]=list[i-(n-k)]
+    print(arr)
